@@ -15,6 +15,7 @@ print('Iron Man')
 print('Hulk')
 print('Deadpool\n')
 op = input('Digite o nome do seu personagem favorito.\n')
+print('página html atualizada.')
     
 
 
@@ -22,8 +23,7 @@ parametros = {"nameStartsWith": op, "ts": ts, "apikey": 'c349492697318809c3541cc
 
 r = requests.get('https://gateway.marvel.com:443/v1/public/characters', parametros)
 #r = requests.get('https://gateway.marvel.com:443/v1/public/stories/1/characters', parametros)
-
-print(r.url)
+#print(r.url)
 print(r.status_code)
 print(r.encoding)
 print(r.headers['date'])
